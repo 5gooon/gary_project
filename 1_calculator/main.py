@@ -17,13 +17,6 @@ while True:
 
 
 # 2) 연산자 입력받고 허용값 검증(+, -, *, /)
-def get_operation() -> str:
-    allowed = {"+", "-", "*", "/"}
-    while True:
-        op = input("연산을 선택하세요 (+, -, *, /): ").strip()
-        if op in allowed:
-            return op
-        print("허용되지 않는 연산자입니다. (+, -, *, /) 중에서 선택해 주세요.")
 
 while True:
     allowed = {"+", "-", "*", "/"}
