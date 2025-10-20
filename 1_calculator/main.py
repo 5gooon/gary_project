@@ -14,4 +14,24 @@ while True:
         #위에 입력값이 숫자형식이 아니면 형식오류이기때문에 ValueError사용
         print("잘못된 입력입니다. 숫자를 다시 입력해 주세요.")
 
-print(f"첫번째 숫자 : {num1} , 두번째 숫자 : {num2}") #숫자 두개를 동시에 받아서 f-string으로 출력
+
+
+# 2) 연산자 입력받고 허용값 검증(+, -, *, /)
+def get_operation() -> str:
+    allowed = {"+", "-", "*", "/"}
+    while True:
+        op = input("연산을 선택하세요 (+, -, *, /): ").strip()
+        if op in allowed:
+            return op
+        print("허용되지 않는 연산자입니다. (+, -, *, /) 중에서 선택해 주세요.")
+
+while True:
+    allowed = {"+", "-", "*", "/"}
+    cal = input(" +, -, *, / 중 연산은 입력하세요").strip()
+    if cal in allowed :
+        break
+    
+    print("잘못된 입력입니다, 연산부호를 다시 입력해주세요.")
+
+print(f"첫번째 숫자 : {num1} , 두번째 숫자 : {num2}") #숫자 두개를 동시에 받아서 f-string으로 출력    
+print(f"입력한 연산은 {cal} 입니다.")
