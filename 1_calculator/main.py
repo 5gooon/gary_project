@@ -1,3 +1,20 @@
+def sum(num1, num2):
+    return num1 + num2
+
+def sub(num1, num2):
+    return num1 - num2
+
+def mul(num1, num2):
+    return num1 * num2
+
+def div(num1, num2):
+    if num2 == 0:
+        print("Error : Division by zero")
+        return 
+    else:
+        return num1 / num2
+
+
 
 #숫자 입력받기
 while True:
